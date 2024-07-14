@@ -8,7 +8,8 @@ app = create_app()
 @app.route('/home')
 def index():
     patients = Patient.query.all()
-    return render_template('index.html', patients=patients)
+    doctor = Doctor.query.first()
+    return render_template('index.html', patients=patients, doctor=doctor)
 
 @app.route('/access', methods=['POST'])
 def access_patient():

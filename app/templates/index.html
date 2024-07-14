@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="my-4">Patient Grid</h1>
+        <h1 class="my-4">Patient Grid for {{ doctor.name }} ({{ doctor.specialization.name }} doctor)</h1>
         <div class="row">
             {% for patient in patients %}
                 <div class="col-md-3">
                     <button class="btn patient-btn patient-button {{ patient.condition.name }}" data-patient-id="{{ patient.id }}">
-                        {{ patient.name }}
+                        {{ patient.name }} - {{ patient.condition.name }}
                     </button>
                 </div>
             {% endfor %}
