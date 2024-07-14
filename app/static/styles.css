@@ -1,0 +1,24 @@
+.patient-btn {
+    width: 70%;
+    height: 70px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.FLU {
+    background-color: #ADD8E6; /* Light Blue */
+}
+
+.FRACTURE {
+    background-color: #FFA07A; /* Light Salmon */
+}
+
+.TOOTHACHE {
+    background-color: #98FB98; /* Pale Green */
+}
+
+.HEARTDISEASE {
+    background-color: #FFB6C1; /* Light Pink */
+}
